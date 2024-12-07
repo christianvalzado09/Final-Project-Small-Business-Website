@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christian Valzado Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+      /* General Reset */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+font-family: 'ariel', sans-serif;
+line-height: 1.6;
+color: #333;
+background-image: url('image/1.jpg');
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+
+    /* Container */
+    .container {
+        width: 90%;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+   /* Header */
+header {
+background: #87CEEB;
+background: ;
+color: #000000;
+padding: 10px 0; /* Reduce padding */
+position: sticky;
+top: 0;
+z-index: 1000;
+}
+
+header .container {
+width: 80%; /* Reduce width of header container */
+margin: 0 auto;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+header .logo {
+font-size: 20px; /* Reduce logo font size */
+font-weight: bold;
+text-transform: uppercase;
+}
+
+header nav {
+display: flex;
+}
+
+header .nav-links {
+list-style: none;
+display: flex;
+justify-content: flex-end;
+gap: 20px;
+}
+
+header .nav-links li a {
+color: #000000;
+text-decoration: none;
+font-size: 16px;
+transition: color 0.3s;
+}
+
+header .nav-links li a:hover {
+color: #00bcd4;
+}
+
+
+    
+header .container {
+width: 70%; /* Reduce width to 70% */
+max-width: 900px; /* Optional: Set a smaller max-width */
+margin: 0 auto; /* Center the container */
+padding: 0 20px; /* Optional: Add some padding if needed */
+}
+
+    
+
+    /* Hero Section */
+    #hero {
+        background-image: url('image/caspe.jpg');
+        background-size: cover;
+        background-position: center;
+        color: #fff;
+        text-align: center;
+        padding: 100px 20px;
+    }
+
+    #hero img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        border: 4px solid #fff;
+        margin-bottom: 20px;
+    }
+
+    #hero h2 {
+        font-size: 40px;
+        margin-bottom: 20px;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    }
+
+    #hero p {
+        font-size: 18px;
+        margin-bottom: 30px;
+        text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+    }
+
+    #hero .btn {
+        background: #fff;
+        color: #000000;
+        padding: 10px 20px;
+        text-decoration: none;
+        font-size: 18px;
+        border-radius: 5px;
+        transition: background 0.3s;
+    }
+
+    #hero .btn:hover {
+        background: #ddd;
+    }
+
+    /* Section Styles */
+    section {
+        padding: 50px 20px;
+    }
+
+    section h2 {
+        font-size: 30px;
+        margin-bottom: 20px;
+        text-align: center;
+        color: #000000;
+    }
+
+    #about p {
+        font-size: 18px;
+        text-align: center;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    /* Business Section */
+    #business-description, #business-products {
+        text-align: center;
+    }
+
+    #business-description p {
+        font-size: 18px;
+        max-width: 800px;
+        margin: 0 auto;
+        color: #555;
+    }
+
+    #business-products .product-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+   /* Ensure the container is styled for flexibility */
+.project-row {
+display: flex;
+flex-wrap: wrap;
+gap: 20px;
+justify-content: center;
+}
+
+.project-card {
+background-color: #FFFFFF;
+border: 1px solid #ddd;
+border-radius: 8px;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+overflow: hidden;
+width: 30%; /* Set the card to occupy 30% of the width */
+text-align: center;
+padding: 20px;
+transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+transform: translateY(-10px);
+}
+
+/* Image Styling */
+.project-card img {
+width: 100%;
+height: 200px;
+object-fit: cover;
+border-radius: 8px;
+margin-bottom: 15px;
+}
+
+.project-card h3 {
+font-size: 1.25rem;
+margin-bottom: 10px;
+}
+
+.project-card p {
+font-size: 1rem;
+color: #555;
+}
+
+/* Footer */
+footer {
+
+background: #87CEEB;
+background-size: cover;
+background-position: center;
+color: #fff;
+text-align: center;
+padding: 15px 0;
+background-repeat: no-repeat;
+}
+
+footer p {
+margin: 0;
+text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6); /* Add text shadow for better contrast */
+}
+
+
+
+
+/* General styling for the Contact Us section */
+#contact-info {
+padding: 20px;
+background-color: #f9f9f9;
+text-align: center;
+font-family: Arial, sans-serif;
+}
+
+#contact-info .container {
+max-width: 1200px;
+margin: 0 auto;
+}
+
+#contact-info h2 {
+font-size: 2rem;
+margin-bottom: 15px;
+color: #333;
+}
+
+#contact-info .contact-details p {
+font-size: 1.2rem;
+margin: 10px 0;
+color: #555;
+}
+
+#contact-info .social-media h3 {
+font-size: 1.5rem;
+margin-top: 30px;
+color: #333;
+}
+
+/* Social Icons styling */
+#contact-info .social-icons {
+display: flex;
+justify-content: center;
+gap: 20px;
+margin-top: 20px;
+}
+
+#contact-info .social-icons a {
+display: inline-block;
+width: 50px;
+height: 50px;
+}
+
+#contact-info .social-icons img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+border-radius: 50%;
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#contact-info .social-icons img:hover {
+transform: scale(1.1);
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+.project-card {
+    width: 30%; /* 3 cards per row */
+}
+
+.card-row {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+}
+
+/* Tablet and Small Desktop (768px - 1024px) */
+@media (max-width: 1024px) and (min-width: 768px) {
+.project-card {
+    width: 45%; /* 2 cards per row */
+}
+
+.project-row {
+    gap: 20px;
+    justify-content: center;
+}
+
+.project-card img {
+    height: 250px; /* Increase image height on medium screens */
+}
+}
+
+/* Mobile (up to 768px) */
+@media (max-width: 768px) {
+/* Adjust Product Cards for Mobile View */
+.project-card {
+    width: 100%; /* 1 card per row */
+    padding: 10px;
+}
+
+.project-card img {
+    height: 200px; /* Adjust image height for mobile */
+}
+
+.project-card h3 {
+    font-size: 1.25rem; /* Slightly smaller title for mobile */
+}
+
+.project-card p {
+    font-size: 1rem; /* Smaller text for mobile */
+}
+
+/* Adjust the hero section for mobile */
+#hero h2 {
+    font-size: 2rem; /* Smaller hero text on mobile */
+}
+
+/* Contact Info Section */
+#contact-info h2 {
+    font-size: 1.5rem;
+}
+
+#contact-info .social-icons img {
+    width: 35px;
+    height: 35px;
+}
+}
+
+/* Smaller Mobile (up to 480px) */
+@media (max-width: 480px) {
+.project-card img {
+    height: 180px; /* Further reduce image size for small screens */
+}
+
+.project-card h3 {
+    font-size: 1.2rem; /* Adjust heading size for very small screens */
+}
+
+.project-card p {
+    font-size: 0.9rem; /* Smaller text for readability */
+}
+
+/* Additional tweaks for very small screens */
+#hero h2 {
+    font-size: 1.8rem; /* Even smaller hero text */
+}
+
+.project-row {
+    gap: 10px; /* Reduce gap between cards */
+}
+}
+
+
+/* Card Styles */
+.card-row {
+display: flex; /* Flexbox for horizontal layout */
+gap: 20px; /* Space between cards */
+margin-top: 20px;
+justify-content: space-between; /* Space out the cards */
+flex-wrap: wrap; /* Allow cards to wrap to the next line on small screens */
+}
+
+
+
+.card {
+background-color: #fff;
+border: 1px solid #ddd;
+border-radius: 10px;
+padding: 20px;
+text-align: center;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+flex: 1 1 calc(50% - 20px); /* Each card takes up 50% of space */
+min-width: 280px; /* Prevent cards from getting too small */
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+.card {
+    flex: 1 1 calc(100% - 20px); /* Cards take up full width on smaller screens */
+}
+}
+
+
+</style>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">Logo</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#business-description">Business</a></li>
+         
+                    <li><a href="#contact-info">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <section id="business-description">
+        <div class="container">
+            <h1>Chill & Swirl: Your Ultimate Spot for Tasty Yogurt Delights!</h1>
+            
+            
+        </div>
+    </section>
+
+   
+
+    <section id="products">
+        <div class="container">
+            <h2>Business Products</h2>
+            <div class="project-row">
+                <div class="project-card">
+                    <img src="image/yogurt3.jpg" alt="Banana">
+                    
+                    <h3>Choose from a variety of delicious flavors that everyone will love. Perfect for all taste buds!</h3>
+                </div>
+                <div class="project-card">
+                    <img src="image/jewel1.jpg" alt="Banana">
+                    
+                    <h3>Customize your yogurt cup! Add toppings, sauces, and sprinkles to make every scoop truly yours</h3>
+                </div>
+                <div class="project-card">
+                    <img src="image/yogurt2.jpg" alt="Banana">
+                 
+                    <h3>Enjoy yogurt that is both nutritious and delicious! Perfect for those seeking a guilt-free indulgence</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="business-description">
+        <div class="container">
+            <h2>Welcome to Chill & Swirl!</h2>
+            
+            
+        </div>
+        <h3>
+            At Chill & Swirl, we are committed to providing you with a delightful and convenient yogurt experience. Our yogurt shop offers a wide variety of delicious flavors and customizable options to satisfy your cravings. Whether you're looking for a healthy snack or a sweet treat, we have everything you need to enjoy a refreshing and creamy yogurt indulgence. Join us for a flavorful journey that will meet all your yogurt needs!
+        </h3>
+    </section>
+
+
+
+    <section class="container">
+        <h2 class="section-title">Why Choose Us?</h2>
+        <div class="card-row">
+            <!-- Single Combined Card -->
+            <div class="card">
+               
+                    <h4><strong>Freshness Guaranteed:</strong> Our yogurt is made with high-quality ingredients to ensure freshness and flavor in every scoop.</h4>
+                    <h4><strong>Affordable Prices:</strong> Indulge in delicious yogurt without breaking the bank—great taste at prices you'll love!</h4>
+                    <h4><strong>Friendly Service:</strong> Our team is dedicated to providing a welcoming and enjoyable experience every time you visit.</h4>
+              
+            </div>
+        </div>
+    </section>
+    
+    <section class="container">
+        <h2 class="section-title">What We Offer</h2>
+        <div class="card-row">
+            <!-- Two Cards Side by Side -->
+            <div class="card">
+                <h4>Delicious Yogurt Flavors.</h4>
+                <h4>Choose from a wide variety of creamy and delightful yogurt flavors to satisfy every craving.</h4>
+            </div>
+            <div class="card">
+                <h4>Customizable Toppings.</h4>
+                <h4>Personalize your yogurt with an array of fresh fruits, crunchy nuts, and sweet sauces for a unique treat.</h4>
+            </div>
+        </div>
+        <!-- Third Card Below -->
+        <div class="card-row">
+            <div class="card">
+                <h4>Healthy Options</h4>
+                <h4>Enjoy our nutritious yogurt selections that are perfect for a guilt-free snack or dessert.</h4>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="flavors">
+        <div class="container">
+            <h2 class="section-title">These Are the Different Types of Yogurt You Should Definitely Try!!!</h2>
+    <br>
+    <br>
+
+            <!-- Flavor Cards -->
+            <div class="card-row">
+                <div class="card">
+                    <h3>Seasonal or Limited Edition Flavors:</h3>
+                    <h5>Pumpkin spice (fall season).</h5>
+                    <h5>Apple cinnamon</h5>
+                    <h5>Peppermint or gingerbread (for holidays)</h5>
+                </div>
+                <div class="card">
+                    <h3>Savory or Unique Flavors:</h3>
+                    <h5>honey.</h5>
+                    <h5>lemon</h5>
+                    <h5>coffee</h5>
+                    <h5>lavender</h5>
+                    <h5>Matcha green tea</h5>
+                </div>
+                <div class="card">
+                    <h3>Dessert-Inspired Flavors:</h3>
+                    <h5>Cookies and cream.</h5>
+                    <h5>Cheesecake</h5>
+                    <h5>chocolate</h5>
+                    <h5>salted caramel</h5>
+                    <h5>tiramisu</h5>
+                </div>
+                <div class="card">
+                    <h3>tropical and Exotic Flavors:</h3>
+                    <h5>coconut</h5>
+                    <h5>pineapple</h5>
+                    <h5>passion fruit</h5>
+                    <h5>guava</h5>
+                    <h5>lychee</h5>
+                </div>
+                <div class="card">
+                    <h3>Classic Flavors:</h3>
+                    <h5>Strawberry</h5>
+                    <h5>Blueberry</h5>
+                    <h5>Peach</h5>
+                    <h5>Mango</h5>
+                    <h5>Raspberry</h5>
+                    <h5>Banana</h5>
+                    
+
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+
+    <section id="contact-info">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="contact-details">
+                <p><strong>Address:</strong>Bagong Silang Caloocan City</p>
+                <p><strong>Phone:</strong> 09812103584</p>
+            </div>
+            <div class="social-media">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/paul.b.valzado" target="_blank">
+                        <img src="image/fb.jpg" alt="Facebook">
+                    </a>
+                    <a href="https://www.instagram.com/yourprofile" target="_blank">
+                        <img src="image/instagram.jpg" alt="Instagram">
+                    </a>
+                    <a href="https://www.tiktok.com/foryou" target="_blank">
+                        <img src="image/tiktok.jpg" alt="TikTok">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <footer>
+        <div class="container">
+            <p>&copy; Copyright © 2024, All rights reserved</p>
+        </div>
+    </footer>
+</body>
+</html>
